@@ -51,6 +51,7 @@ export const lightTheme = createTheme({
     background: {
       primary: "#ecf0f1",
       secondary: "#bdc3c7",
+      gradient: "linear-gradient(to bottom right, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 70%)",
     },
     button: {
       backgroundPrimary: "#53739A", // blue
@@ -121,6 +122,7 @@ export const darkTheme = createTheme({
     background: {
       primary: "#212121",
       secondary: "#3A506B",
+      gradient: "linear-gradient(to bottom right, #192a56 10%, #273c75 50%, #192a56 80%)",
     },
     button: {
       backgroundPrimary: "#03DAC6", //green
@@ -132,7 +134,7 @@ export const darkTheme = createTheme({
     },
     text: {
       primary: "#FFFFFF",
-      secondary: "#60a3bc" //#6FFFE9
+      secondary: "#2e86de" //#6FFFE9
     }
   },
 });

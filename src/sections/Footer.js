@@ -8,7 +8,7 @@ const StyledFooterRoot = styled("section")(({ theme }) => ({
     flexDirection: "column",
     alignContent: "center",
     textAlign: "center",
-    backgroundColor: `${theme.palette.background.primary}FC`,
+    // backgroundColor: `${theme.palette.background.primary}FC`,
 }));
 
 const StyledFooterText = styled(Typography)(({ theme }) => ({

@@ -5,7 +5,8 @@ import Footer from "../sections/Footer"
 import Navbar from "../components/Navbar"
 
 const StyledMainPage = styled("div")(({ theme }) => ({
-    backgroundColor: theme.palette.background.primary,
+    background: theme.palette.background.gradient,
+    // backgroundColor: theme.palette.background.primary,
     position: "relative",
     overflow: "hidden",
 }));
