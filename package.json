@@ -1,6 +1,6 @@
 {
   "name": "seenooks-landing-page",
-  "homepage": "/",
+  "homepage": "http://www.seenooks.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
