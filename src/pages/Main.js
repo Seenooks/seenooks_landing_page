@@ -27,8 +27,6 @@ const Main = () => {
                     <Footer />
                 </StyledMainContainer>
             </StyledMainPage>
-            
-            
         </>
     );
 }

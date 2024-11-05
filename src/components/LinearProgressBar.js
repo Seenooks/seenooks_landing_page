@@ -18,10 +18,10 @@ const StyledProgressBarContainer = styled("div")(({ theme }) => ({
 
     [theme.breakpoints.down("md")]: {
         width: "70%",
-      },
-      [theme.breakpoints.down("sm")]: {
+    },
+    [theme.breakpoints.down("sm")]: {
         width: "90%",
-      },
+    },
 }));
 
 const StyledLinearProgressBar = styled(LinearProgress)(({ theme }) => ({

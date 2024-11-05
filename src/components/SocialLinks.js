@@ -1,5 +1,4 @@
 import { styled } from "@mui/material"
-import FacebookIcon from "@mui/icons-material/Facebook"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import InstagramIcon from "@mui/icons-material/Instagram"
 import XIcon from "@mui/icons-material/X"
@@ -9,22 +8,14 @@ const StyledSocialLinksContainer = styled("div")(({ theme }) => ({
     flexDirection: "row",
     justifyContent: "center",
     alignContent: "center",
-    // width: "35%",
     margin: "auto",
     marginTop: "2rem",
-    
-    // [theme.breakpoints.down("md")]: {
-    //     width: "55%",
-    // },
-    // [theme.breakpoints.down("sm")]: {
-    //     width: "65%",
-    // },
     
 }));
 
 const StyledSocialLink = styled("a")(({ theme }) => ({
-    display: "inline-flex", // Ensures the anchor behaves like an inline element
-    justifyContent: "center", // Center align the icon within the anchor
+    display: "inline-flex",
+    justifyContent: "center",
     alignItems: "center",
     margin: "1rem",
     border: `2px solid ${theme.palette.text.primary}`,
@@ -53,12 +44,6 @@ const StyledSocialLink = styled("a")(({ theme }) => ({
 const SocialLinks = () => {
     return (
         <StyledSocialLinksContainer>
-            {/* <StyledSocialLink
-                href={"facebook"}
-                target="_blank"
-            >
-                <FacebookIcon />
-            </StyledSocialLink> */}
             <StyledSocialLink
                 href={"https://www.linkedin.com/company/seenooks/"}
                 target="_blank"
