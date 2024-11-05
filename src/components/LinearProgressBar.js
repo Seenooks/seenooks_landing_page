@@ -2,14 +2,33 @@ import React from "react"
 import {
     Box,
     LinearProgress,
-    styled
+    styled,
+    Typography
 } from "@mui/material"
 
-const StyledLinearProgressBar = styled(LinearProgress)(({ theme }) => ({
-    width: "50%",
-    height: "15px",
+const StyledProgressBarContainer = styled("div")(({ theme }) => ({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+    flexDirection: "",
+    width: "60%",
     margin: "auto",
     marginTop: "3rem",
+
+    [theme.breakpoints.down("md")]: {
+        width: "70%",
+      },
+      [theme.breakpoints.down("sm")]: {
+        width: "90%",
+      },
+}));
+
+const StyledLinearProgressBar = styled(LinearProgress)(({ theme }) => ({
+    width: "100%",
+    marginLeft: "1rem",
+    marginRight: "1rem",
+    height: "15px",
 }));
 
 const LinearProgressBar = () => {
@@ -33,10 +52,15 @@ const LinearProgressBar = () => {
 
 
     return (
-        <StyledLinearProgressBar
-            variant="determinate"
-            value={progress}
-        />
+        <StyledProgressBarContainer>
+            <Typography>0%</Typography>
+            <StyledLinearProgressBar
+                variant="determinate"
+                value={progress}
+            />
+            <Typography>100%</Typography>
+        </StyledProgressBarContainer>
+
     )
 }
 

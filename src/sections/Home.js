@@ -2,25 +2,24 @@ import React from "react"
 import {
     Container,
     Grid,
-    Box,
     Typography,
-    styled,
-    LinearProgress
+    styled
 } from "@mui/material"
 import LinearProgressBar from "../components/LinearProgressBar";
+import SocialLinks from "../components/SocialLinks";
 
-const StyledHomeRoot = styled("section")(({ theme, ismobile }) => ({
+const StyledHomeRoot = styled("section")(({ theme }) => ({
     display: "flex",
     flexWrap: "wrap",
     alignContent: "center",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    minHeight: ismobile ? "auto" : "100vh",
+    minHeight: "85vh",
     marginBottom: "1rem",
 }));
 
-const StyledHomeContainer = styled(Container)(({ theme, ismobile }) => ({
+const StyledHomeContainer = styled(Container)(({ theme }) => ({
     display: "flex !important",
     alignItems: "center",
     alignSelf: "center",
@@ -30,37 +29,37 @@ const StyledHomeContainer = styled(Container)(({ theme, ismobile }) => ({
     marginTop: "2rem",
 }));
 
-const StyledHomeGrid = styled(Grid)(({ ismobile }) => ({
+const StyledHomeGrid = styled(Grid)(({ theme }) => ({
     alignItems: "center",
     justifyContent: "center",
     width: "auto",
     padding: "1rem",
-    marginBottom: ismobile ? "3.5rem" : "0rem",
+    marginBottom: "0rem",
 }));
 
 const StyledHomeGridItem = styled(Grid)(({ theme }) => ({
     animation: "fadeIn",
     animationDuration: "2s",
     paddingLeft: "0 !important",
-    // [theme.breakpoints.down("md")]: {
-    //   width: "100%",
-    //   margin: "0",
-    //   order: "2",
-    //   textAlign: "center",
-    //   padding: "2rem",
-    //   paddingRight: "0 !important"
-    // },
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      margin: "0",
+      textAlign: "center",
+      paddingRight: "0 !important"
+    },
 }));
 
 const StyledHomeTitle = styled(Typography)(({ theme }) => ({
+    fontFamily: "'Anton SC', sans-serif",
     fontWeight: "bold !important",
     color: theme.palette.text.primary,
     marginBottom: theme.spacing(0),
     textAlign: "center",
-    fontSize: "clamp(50px, 7vw, 100px) !important",
+    fontSize: "clamp(60px, 8vw, 120px) !important",
 }));
 
 const StyledHomeSubTitle = styled(Typography)(({ theme }) => ({
+    fontFamily: "'Anton SC', sans-serif",
     fontSize: "clamp(20px, 2vw, 26px) !important",
     color: theme.palette.text.primary,
     textAlign: "center",
@@ -92,7 +91,7 @@ const Home = () => {
                 <StyledHomeGrid container>
                     <StyledHomeGridItem
                         item
-                        lg={12}
+                        xs={12}
                     >
                         <StyledHomeTitle component="h1">
                             UNDER CONSTRUCTION
@@ -104,6 +103,12 @@ const Home = () => {
 
                         <LinearProgressBar />
                         
+                    </StyledHomeGridItem>
+                    <StyledHomeGridItem
+                    item
+                    xs={12}
+                    >
+                        <SocialLinks />
                     </StyledHomeGridItem>
 
                 </StyledHomeGrid>

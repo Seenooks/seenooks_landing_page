@@ -36,7 +36,7 @@ export const lightTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Jost', sans-serif",
+    fontFamily: "'Anton SC', sans-serif",
   },
   breakpoints: {
     values: {
@@ -103,7 +103,10 @@ export const darkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Jost', sans-serif",
+    fontFamily: "'Roboto', sans-serif",
+    // fontFamily: "'Anton SC', sans-serif",
+    // fontFamily: "'Rubik Wet Paint', system-ui",
+    // fontFamily: "'Concert One', sans-serif",
   },
   breakpoints: {
     values: {
@@ -129,7 +132,7 @@ export const darkTheme = createTheme({
     },
     text: {
       primary: "#FFFFFF",
-      secondary: "#6FFFE9"
+      secondary: "#60a3bc" //#6FFFE9
     }
   },
 });
