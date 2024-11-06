@@ -14,16 +14,16 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
         "all 0.4s cubic-bezier(0.645,0.045,0.355,1), background-color 0ms !important",
     transitionDelay: "0.1s",
     boxShadow: "none !important",
-    padding: "0.5rem",
+    padding: "1rem",
 }));
 
 const StyledAppBarContainer = styled("div")(({ theme }) => ({
     flexDirection: "column",
     alignItems: "center",
     alignSelf: "center",
-    maxWidth: "1200px",
+    maxWidth: "1600px",
     justifyContent: "center",
-    width: "90vw !important",
+    width: "100vw !important",
     [theme.breakpoints.down("md")]: {
         width: "100vw !important",
     },
@@ -53,7 +53,7 @@ const Navbar = () => {
     return (
         <StyledAppBar position='fixed'>
             <StyledAppBarContainer>
-                <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+                <Toolbar style={{ display: "flex", justifyContent: "flex-start", paddingLeft: "1rem" }}>
                     <StyledLogo
                         href="#Home"
                         to="Home"

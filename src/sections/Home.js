@@ -56,6 +56,7 @@ const StyledHomeTitle = styled(Typography)(({ theme }) => ({
     marginBottom: theme.spacing(0),
     textAlign: "center",
     fontSize: "clamp(60px, 8vw, 120px) !important",
+    paddingTop: "3rem",
 }));
 
 const StyledHomeSubTitle = styled(Typography)(({ theme }) => ({
