@@ -2,4 +2,4 @@
   Seenooks Landing Page
 </h2>
 
-![Screenshot](./page_ss.png)
+![Screenshot](./page-ss.png)
